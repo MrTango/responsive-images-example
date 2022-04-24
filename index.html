@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      max-width: 100%;
+    }
+    @media (max-width: 799px) {
+      img{ width: 90vw; }
+    }
+    .wrapper{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <picture class="image-size-large">
+    <!-- desktop: -->
+    <source
+      srcset="https://picsum.photos/id/1011/800 800w,
+              https://picsum.photos/id/1011/1000 1000w,
+              https://picsum.photos/id/1011/1200 1200w,
+              https://picsum.photos/id/1011/1600 1600w"
+      sizes="800px"
+      >
+    <img src="https://picsum.photos/id/1011/800" sizes="800px">
+  </picture>
+
+  <picture class="image-size-medium">
+    <!-- desktop: -->
+    <source
+      srcset="https://picsum.photos/id/1011/600 600w,
+              https://picsum.photos/id/1011/800 800w,
+              https://picsum.photos/id/1011/1000 1000w,
+              https://picsum.photos/id/1011/1200 1200w"
+      sizes="600px"
+      >
+    <img class="medium" src="https://picsum.photos/id/1011/600">
+  </picture>
+
+  <!-- art direction / cropped image for mobile -->
+  <picture class="image-size-small">
+    <!-- desktop: -->
+    <source media="(min-width:800px)"
+      srcset="https://picsum.photos/id/1011/400 400w,
+              https://picsum.photos/id/1011/800 800w,
+              https://picsum.photos/id/1011/1000 1000w,
+              https://picsum.photos/id/1011/1200 1200w"
+      sizes="400px"
+      >
+    <!-- smartphone -->
+    <source media="(max-width:799px)"
+      srcset="https://picsum.photos/id/1012/400 400w,
+              https://picsum.photos/id/1012/800 800w,
+              https://picsum.photos/id/1012/1000 1000w,
+              https://picsum.photos/id/1012/1200 1200w"
+      sizes="90vw"
+      >
+    <img src="https://picsum.photos/id/1012/400" sizes="400px">
+  </picture>
+
+</div>
+
+</body>
+</html>
