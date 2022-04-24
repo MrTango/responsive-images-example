@@ -25,7 +25,7 @@
 <div class="wrapper">
 
   <picture class="image-size-large">
-    <!-- desktop: -->
+    <!-- desktop / mobile -->
     <source
       srcset="https://picsum.photos/id/1011/800 800w,
               https://picsum.photos/id/1011/1000 1000w,
@@ -37,7 +37,7 @@
   </picture>
 
   <picture class="image-size-medium">
-    <!-- desktop: -->
+    <!-- desktop / mobile -->
     <source
       srcset="https://picsum.photos/id/1011/600 600w,
               https://picsum.photos/id/1011/800 800w,
@@ -48,9 +48,21 @@
     <img class="medium" src="https://picsum.photos/id/1011/600">
   </picture>
 
+  <picture class="image-size-small">
+    <!-- desktop / mobile -->
+    <source
+      srcset="https://picsum.photos/id/1011/400 400w,
+              https://picsum.photos/id/1011/800 800w,
+              https://picsum.photos/id/1011/1000 1000w,
+              https://picsum.photos/id/1011/1200 1200w"
+      sizes="400px"
+      >
+    <img src="https://picsum.photos/id/1012/400" sizes="400px">
+  </picture>
+
   <!-- art direction / cropped image for mobile -->
   <picture class="image-size-small">
-    <!-- desktop: -->
+    <!-- desktop -->
     <source media="(min-width:800px)"
       srcset="https://picsum.photos/id/1011/400 400w,
               https://picsum.photos/id/1011/800 800w,
