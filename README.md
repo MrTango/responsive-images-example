@@ -12,9 +12,8 @@ A basic setup could be as follows:
             https://picsum.photos/id/1011/1000 1000w,
             https://picsum.photos/id/1011/1200 1200w,
             https://picsum.photos/id/1011/1600 1600w"
-    sizes="800px"
     >
-  <img src="https://picsum.photos/id/1011/800" sizes="800px">
+  <img src="https://picsum.photos/id/1011/800" width="800" height="800">
 </picture>
 ```
 
@@ -41,6 +40,6 @@ For the use case of `art direction` we need to use multiple source tags with med
             https://picsum.photos/id/1012/1200 1200w"
     sizes="90vw"
     >
-  <img src="https://picsum.photos/id/1012/400" sizes="400px">
+  <img src="https://picsum.photos/id/1012/400"  width="400" height="400">
 </picture>
 ```
